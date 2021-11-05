@@ -5,7 +5,8 @@ public class SecondProgram {
     int arg1, arg2;
 
     public static void main(String[] args) {
-        System.out.println("Привет, мир");
+        System.out.println("Привет, мир!");
+
 
         long summa = summa(3, 5);
         System.out.println(summa);
