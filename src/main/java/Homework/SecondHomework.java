@@ -1,7 +1,7 @@
 package Homework;
 
 public class SecondHomework {
-    // период колебания мятника
+    // период колебания математического мятника
     double pi, g;
     int l;
 
