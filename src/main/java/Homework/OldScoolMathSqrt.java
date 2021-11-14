@@ -1,4 +1,4 @@
-package Homework;
+﻿package Homework;
 import java.util.Scanner;
 public class OldScoolMathSqrt {
     public static void main(String[] args) {
