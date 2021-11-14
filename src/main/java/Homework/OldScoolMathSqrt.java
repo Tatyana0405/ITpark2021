@@ -1,6 +1,6 @@
 ﻿package Homework;
 import java.util.Scanner;
-public class OldShcoolMathSqrt {
+public class OldScoolMathSqrt {
     public static void main(String[] args) {
         Scanner fact = new Scanner(System.in);
         System.out.println("Введите значение числа из которого излекается корень");
