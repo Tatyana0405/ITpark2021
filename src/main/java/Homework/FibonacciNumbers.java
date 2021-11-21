@@ -18,8 +18,8 @@ public class FibonacciNumbers {
         }
         else {
             int a = 1, b = 1, i;
-            System.out.print(a + ", " + b);
-            for (i = 3; i <= N; i++) {
+            System.out.print("0,"+a + ", " + b);
+            for (i = 4; i <= N; i++) {
                 b = b + a;
                 a = b - a;
                 System.out.print(", " + b);
