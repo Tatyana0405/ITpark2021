@@ -2,27 +2,27 @@ package Homework.HW7;
 
 public class Dog {
     public String name;
-    public int maxrunlength;
-    public int maxswimlenght;
+    public int maxRunLength;
+    public int maxSwimLenght;
 
     public Dog(String name, int runlength, int swimlength) {
         this.name = name;
-        this.maxrunlength = runlength;
-        this.maxswimlenght = swimlength;
+        this.maxRunLength = runlength;
+        this.maxSwimLenght = swimlength;
 
     }
 
     public void run(Integer distance) {
-        if (distance >= maxrunlength) {
-            System.out.println("Собака " + name + " не может пробежать " + distance + ". Может только " + maxrunlength);
+        if (distance >= maxRunLength) {
+            System.out.println("Собака " + name + " не может пробежать " + distance + ". Может только " + maxRunLength);
         } else {
             System.out.println("Собака" + name + " пробежала" + distance);
         }
     }
 
     public void swim(Integer distance) {
-        if (distance >= maxswimlenght) {
-            System.out.println("Собака " + name + " не может проплыть " + distance + ". Может только " + maxswimlenght);
+        if (distance >= maxSwimLenght) {
+            System.out.println("Собака " + name + " не может проплыть " + distance + ". Может только " + maxSwimLenght);
         } else {
             System.out.println("Собака " + name + " проплыла " + distance);
         }
