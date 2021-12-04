@@ -1,4 +1,4 @@
-package Homework;
+package Homework.HWdo5;
 
 public class SecondHomework {
     // период колебания математического мятника

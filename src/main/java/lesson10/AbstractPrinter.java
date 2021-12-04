@@ -5,6 +5,7 @@ public class AbstractPrinter {
     private String source;
 
     public AbstractPrinter(String intro) {
+
         this.source = intro;
     }
 

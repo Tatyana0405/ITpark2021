@@ -2,8 +2,6 @@ package lesson8;
 
 import java.util.Objects;
 
-
-
 public class Cat {
 
     String name;

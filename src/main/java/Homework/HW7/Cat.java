@@ -22,6 +22,7 @@ public class Cat {
     }
 
     public void swim(Integer distance) {
+
         System.out.println("Коты не любят плавать");
     }
 }

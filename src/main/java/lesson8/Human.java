@@ -43,7 +43,7 @@ public class Human {
         return this instanceof Male ? "Мужчина" : "Женщина";
     }
 
-    public String toStrring() {
+    public String toString() {
         return "Human{" +
                 "fio=' " + fio + '\'' +
                 ", age=" + getAge() +
