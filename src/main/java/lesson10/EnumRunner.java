@@ -7,7 +7,7 @@ public class EnumRunner {
     public static void main(String[] args) {
         Printable printable = new Printer();
         printable.printHelloWorld(Language.FRENCH);
-        printable.printHelloWorld(Language.as(12));
+        printable.printHelloWorld(Language.as(4));
 
         System.out.println(Language.GERMAN.asString());
         System.out.println(Language.GERMAN.toString());

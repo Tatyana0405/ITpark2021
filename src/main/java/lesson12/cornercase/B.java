@@ -1,29 +1,20 @@
 package lesson12.cornercase;
 
-import lesson12.exception.UnnamedException;
+import lesson12.exception.MethodException;
 
-import java.util.Random;
+public class B extends A {
 
-public class InitialiazingBlock {
-
-    private final String name;
-
-    static {
-        if (true/*new Random().nextBoolean()*/) {
-            throw new UnnamedException("Неизвестный блок");
-        }
+    @Override
+    protected void a() throws MethodException {
+//        try {
+//            super.a();
+//        } catch (MethodException e) {
+//            e.printStackTrace();
+//        }
+        super.a();
     }
 
-    public InitialiazingBlock()/* throws UnnamedException*/ {
-//        throw new UnnamedException("Задайте имя объекту");
-        this.name = "Unknown";
-    }
+    void b() {
 
-    public InitialiazingBlock(String name)/* throws UnnamedException*/ {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
     }
 }
