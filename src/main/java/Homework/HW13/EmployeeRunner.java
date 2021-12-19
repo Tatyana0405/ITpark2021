@@ -17,10 +17,10 @@ public class EmployeeRunner {
         employees.add(new Employee("Дорофеева Ирина Александровна", 7777, 35));
         employees.add(new Employee("Громов Сергей Сергеевич", 7777, 35));
         System.out.println(employees);
-        for (Employee employee : employees) {
+        /*for (Employee employee : employees) {
             employees.ageSorter();
 
-        }
+        }*/
 
     }
 }

@@ -11,12 +11,12 @@ public class Employee {
         this.workAge = workAge;
     }
 
-    public int ageSorter(int workAge){
+   /* public int ageSorter(int workAge){
         if (this.workAge == 35){
             System.out.println(getName()+getPersonnelNumber()+getWorkAge());
         }
         return ageSorter(workAge);
-    }
+    }*/
 
     @Override
     public String toString() {
