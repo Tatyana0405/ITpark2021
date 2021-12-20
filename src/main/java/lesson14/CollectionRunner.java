@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Random;
 
-public class CollectionsRunner {
+public class CollectionRunner {
 
     private static final List<String> WORDS = List.of("Виталий", "Василий");
 
