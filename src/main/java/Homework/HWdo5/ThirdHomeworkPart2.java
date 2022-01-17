@@ -7,7 +7,7 @@ public class ThirdHomeworkPart2 {
         Scanner fact = new Scanner(System.in);
         System.out.println("Введите значение факториала!");
         int n = fact.nextInt();
-        System.out.println("Факториал " + n);
+        System.out.println("Факториал " +n);
         long a = 1;
         int i;
 
@@ -19,7 +19,7 @@ public class ThirdHomeworkPart2 {
             for (i = 1; i <= n; i++) {
                 a = a * i;
             }
-            System.out.println("Значение факториала =  " + a);
+            System.out.println("Значение факториала =  " +a);
         }
     }
 }

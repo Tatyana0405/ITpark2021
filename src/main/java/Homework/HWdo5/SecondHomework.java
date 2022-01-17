@@ -10,7 +10,7 @@ public class SecondHomework {
     }
 
     public static long sum(int a, int b) {
-        return a + b;
+        return a +b;
     }
 
     public static long minus(int c, int d) {
@@ -35,7 +35,7 @@ public class SecondHomework {
         long min = minus(13, 7);
         System.out.println(min);
 
-        long multip = multiplication(5, 5);
+        long multip = multiplication(5,5);
         System.out.println(multip);
 
         double div = division(42, 7);

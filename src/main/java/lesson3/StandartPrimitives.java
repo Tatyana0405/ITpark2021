@@ -12,7 +12,7 @@ public class StandartPrimitives {
         long bigValue = 1454165000L; // 2^63...2^63-1
 
         char simbol = 'Я'; //  1071..    16 битный 0..2^16-1
-        System.out.println(simbol + 1);
+        System.out.println(simbol  +1);
 
         double digitWithPoint = 3.14; // 64 битный
         float floatValue = 100.25F;
@@ -34,16 +34,16 @@ public class StandartPrimitives {
 
         double floatingPointValue = 1.5;
         if (2.5 == floatingPointValue) {
-            System.out.println("2.5 равно" + floatingPointValue);
+            System.out.println("2.5 равно"  +floatingPointValue);
         } else if (1 == 1) {
-            System.out.println("2.5 равно" + floatingPointValue + "но 1=1");
+            System.out.println("2.5 равно"  +floatingPointValue  +"но 1=1");
         } else {
-            System.out.println("2.5 не равно" + floatingPointValue);
+            System.out.println("2.5 не равно"  +floatingPointValue);
         }
 
         boolean bool1 = floatingPointValue != 0 && (100 / floatingPointValue == 10);
 
-        if (bool1 != true) { // так делать не стоит, лучше пользоваться !
+        if (bool1 != true) { // так делать не стоит+ лучше пользоваться !
 
         } else {
 
