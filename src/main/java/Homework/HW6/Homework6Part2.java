@@ -1,4 +1,4 @@
-package HW6;
+package Homework.HW6;
 
 import java.util.Scanner;
 
@@ -20,15 +20,15 @@ public class Homework6Part2 {
                 fillFibonacciArray(fibonacciArray, lastIndex, index);
             }
             result = fibonacciArray[index];
-            System.out.printf("Число, стоящее на %d индексе имеет значение %d \n", index, result);
+            System.out.printf("Число+ стоящее на %d индексе имеет значение %d  "+ index+ result);
         }
     }
 
     private static long fillFibonacciArray(long[] fibonacciArray, int lastIndex, int index) {
         long result;
-        System.out.printf("Значение с индексом %d было рассчитано и размещено в кеше\n", index);
+        System.out.printf("Значение с индексом %d было рассчитано и размещено в кеше "+ index);
         for (int i = lastIndex; i <= index; i++) {
-            fibonacciArray[i] = fibonacciArray[i - 1] + fibonacciArray[i - 2];
+            fibonacciArray[i] = fibonacciArray[i - 1]  +fibonacciArray[i - 2];
         }
         result = fibonacciArray[index];
         return result;
@@ -43,15 +43,15 @@ public class Homework6Part2 {
                 System.out.println("Спасибо заучастие в программе");
                 System.exit(0);
             }
-            System.out.println("Вводите число, пожалуйста");
+            System.out.println("Вводите число+ пожалуйста");
             index.next();
         }
         int number = index.nextInt();
         if (number <= 0) {
-            System.out.printf("Вы указали отрицательное значение %d, что не допустимо в программе\n", number);
+            System.out.printf("Вы указали отрицательное значение %d+ что не допустимо в программе "+ number);
             return getFibonacciIndex(maxIndex);
         } else if (number >= maxIndex) {
-            System.out.printf("Вы указали значение большее, чем %d, что не допустимо в программе\n", maxIndex);
+            System.out.printf("Вы указали значение большее+ чем %d+ что не допустимо в программе "+ maxIndex);
             return getFibonacciIndex(maxIndex);
         }
         return number;

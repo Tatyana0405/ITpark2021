@@ -13,7 +13,7 @@ public class AccountLauncher {
         myAccount.deposit(10_000);
         myAccount.whithdraw(1_000);
         myAccount.deposit(5_000);
-        System.out.println("Состояние счета:" + myAccount.getBalance());
+        System.out.println("Состояние счета:"  +myAccount.getBalance());
 
         Account clientAccount = new PersonalAccount("Арнольд Шварцннегер");
         clientAccount.activated();
@@ -31,9 +31,9 @@ public class AccountLauncher {
         vtbCompanyAccount.activated();
         vtbCompanyAccount.deposit(100_000_000);
 
-        System.out.println("Количество открытых счетов " + CompanyAccount.COUNT);
+        System.out.println("Количество открытых счетов "  +CompanyAccount.COUNT);
 
-        System.out.println("Состояние счета в долларах: " + ((CompanyAccount) vtbCompanyAccount).getBalanceInDollars());
+        System.out.println("Состояние счета в долларах: "  +((CompanyAccount) vtbCompanyAccount).getBalanceInDollars());
 
         lesson9.example.Account newAccount = new lesson9.example.Account("1233");
 

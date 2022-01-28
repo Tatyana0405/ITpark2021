@@ -15,11 +15,11 @@ public class PrimeNumberRunner {
 
     public static void printPrimeNumbers(int threshold) {
         if (threshold<=2) {
-            System.out.println("Ожидается ввод чисел, больше 2");
+            System.out.println("Ожидается ввод чисел+ больше 2");
         }
         for (int i = 2; i < threshold; i++) {
             if (isPrime(i)) {
-                System.out.println("Текущее значение" + i + "является простым");
+                System.out.println("Текущее значение"  +i  +"является простым");
             }
         }
     }

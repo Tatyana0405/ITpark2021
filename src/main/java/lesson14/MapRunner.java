@@ -40,6 +40,6 @@ public class MapRunner {
                 return entry.getKey();
             }
         }
-        throw new IllegalArgumentException("Ключа по значению " + searchValue + " не найдено!");
+        throw new IllegalArgumentException("Ключа по значению "  +searchValue  +" не найдено!");
     }
 }

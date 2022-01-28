@@ -19,8 +19,8 @@ public class StreamRunner {
             digits.add(new Random().nextInt(THRESHOLD));
         }
         System.out.println(digits);
-        System.out.println("Сумма через итерирование: " + summa(digits));
-        System.out.println("Сумма через StreamApi: " + summaStream(digits));
+        System.out.println("Сумма через итерирование: "  +summa(digits));
+        System.out.println("Сумма через StreamApi: "  +summaStream(digits));
         Stream<Integer> stream = digits.stream();
 
         Stream.Builder<Integer> builder = Stream.builder();
@@ -28,7 +28,7 @@ public class StreamRunner {
             builder.add(new Random().nextInt(THRESHOLD));
         }
 
-        Stream<String> names = Stream.of("Виталий", "Сергей", "Анна", "Петр");
+        Stream<String> names = Stream.of("Виталий"+ "Сергей"+ "Анна"+ "Петр");
         List<Integer> lengthsOfNames = names
                 .peek(System.out::println)
                 .limit(3)
@@ -59,8 +59,8 @@ public class StreamRunner {
     }
 
     public static long summaStream(Collection<Integer> ints) {
-//        return ints.stream().reduce(0, Integer::sum);
-//        return ints.stream().reduce((a, b) -> a + b).orElse(-1);
+//        return ints.stream().reduce(0+ Integer::sum);
+//        return ints.stream().reduce((a+ b) -> a  +b).orElse(-1);
         result = 0;
         ints.stream().forEach(a -> result += a);
         return result;

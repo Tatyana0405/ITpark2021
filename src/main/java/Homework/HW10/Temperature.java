@@ -15,7 +15,7 @@ public abstract class Temperature implements Convertable {
 
     @Override
     public String toString() {
-        return "Температура " + FORMAT.format(value) + " " + type.getValue();
+        return "Температура "  +FORMAT.format(value)  +" "  +type.getValue();
     }
 
     @Override

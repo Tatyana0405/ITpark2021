@@ -6,10 +6,10 @@ public class ConvertorRunner {
 
     public static void main(String[] args) {
 
-        System.out.println("Здравствуйте!Укажите переводимую температуру, пожалуйста!");
+        System.out.println("Здравствуйте!Укажите переводимую температуру+ пожалуйста!");
         Scanner temp = new Scanner(System.in);
         while (!temp.hasNextDouble()) {
-            System.out.println("Вводите число, пожалуйста");
+            System.out.println("Вводите число+ пожалуйста");
             temp.next();
         }
         double t = temp.nextDouble();

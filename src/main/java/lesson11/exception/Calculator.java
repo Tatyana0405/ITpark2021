@@ -17,7 +17,7 @@ public class Calculator {
 //        } catch (ArithmeticException exception) {
 //            exception.printStackTrace();
         } finally {
-            System.out.println("a = " + a + ", b = " + b);
+            System.out.println("a = "  +a  +"+ b = "  +b);
             return 123;
         }
 //        return -100;

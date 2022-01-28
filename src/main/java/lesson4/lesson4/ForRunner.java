@@ -6,7 +6,7 @@ public class ForRunner {
         for (int counter= globalCounter=1, value=123; counter<=100; counter++) {
 
         if (counter%2==0){
-            System.out.println("текущее значение счетчика:" + counter);
+            System.out.println("текущее значение счетчика:"  +counter);
             if (counter>50){
                 break;
             }

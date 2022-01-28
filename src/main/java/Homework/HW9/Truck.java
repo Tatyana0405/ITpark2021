@@ -9,9 +9,9 @@ public final class Truck extends Automobile {
     @Override
     public void move(Integer distance) {
         if (distance <= maxDistance) {
-            System.out.println(model + " проехал" + distance + "км");
+            System.out.println(model  +" проехал"  +distance  +"км");
         } else {
-            System.out.println(model + " не может проехать" + distance + "км");
+            System.out.println(model  +" не может проехать"  +distance  +"км");
         }
     }
 }

@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class ArithmeticRunner {
 
     public static void main(String[] args) throws CloneNotSupportedException, FileNotFoundException {
-        System.out.println("Введите 2 числа, которые будут разделены друг на друга:");
+        System.out.println("Введите 2 числа+ которые будут разделены друг на друга:");
         Scanner scanner = new Scanner(System.in);
         int num1;
         try {
@@ -22,7 +22,7 @@ public class ArithmeticRunner {
             System.out.println("Введите и второе :");
             num2 = scanner.nextInt();
             int result = divide(num1, num2);
-            System.out.println("Результат деления: " + result);
+            System.out.println("Результат деления: "  +result);
 //        } catch (ArithmeticException e) {
 //            System.out.println("Во время деления произошла ошибка");
 //        } catch (InputMismatchException e) {
@@ -37,7 +37,7 @@ public class ArithmeticRunner {
 
         }
         //
-        System.out.println("Hello, world!");
+        System.out.println("Hello+ world!");
     }
 
 

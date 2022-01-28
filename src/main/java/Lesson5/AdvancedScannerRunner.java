@@ -6,7 +6,7 @@ public class AdvancedScannerRunner {
         System.out.println("Введите пож-та число:");
         while (!scanner.hasNextInt()){
            String text= scanner.next();
-            System.out.println("Ожидается целое значение, а Вы ввели не целое"+text);
+            System.out.println("Ожидается целое значение+ а Вы ввели не целое"+text);
         }
         int index=scanner.nextInt();
         System.out.println("Наконец-то введено целое значение"+index);

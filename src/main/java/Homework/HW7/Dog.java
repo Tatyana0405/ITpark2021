@@ -14,17 +14,17 @@ public class Dog {
 
     public void run(Integer distance) {
         if (distance >= maxRunLength) {
-            System.out.println("Собака " + name + " не может пробежать " + distance + ". Может только " + maxRunLength);
+            System.out.println("Собака " +name  +" не может пробежать "  +distance +". Может только " +maxRunLength);
         } else {
-            System.out.println("Собака" + name + " пробежала" + distance);
+            System.out.println("Собака"  +name  +" пробежала"  +distance);
         }
     }
 
     public void swim(Integer distance) {
         if (distance >= maxSwimLenght) {
-            System.out.println("Собака " + name + " не может проплыть " + distance + ". Может только " + maxSwimLenght);
+            System.out.println("Собака "  +name  +" не может проплыть "  +distance  +". Может только " +maxSwimLenght);
         } else {
-            System.out.println("Собака " + name + " проплыла " + distance);
+            System.out.println("Собака "  +name  +" проплыла "  +distance);
         }
     }
 }

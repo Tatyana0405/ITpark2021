@@ -23,7 +23,7 @@ public class CompanyAccount extends Account {
     }
 
     protected void printBalance() {
-        System.out.println("Текущий баланс в долларах:" + getBalanceInDollars());
+        System.out.println("Текущий баланс в долларах:"  +getBalanceInDollars());
     }
 }
 

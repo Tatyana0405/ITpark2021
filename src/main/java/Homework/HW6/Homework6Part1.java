@@ -1,4 +1,4 @@
-package HW6;
+package Homework.HW6;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -10,15 +10,15 @@ public class Homework6Part1 {
         int size = getArrayLength();
         int[] arr = fillArray(size);
         System.out.println(Arrays.toString(arr));
-        System.out.println("Количество чисел: " + size);
+        System.out.println("Количество чисел: "  +size);
         int max = getMax(arr);
-        System.out.println("Максимум в массиве" + max);
+        System.out.println("Максимум в массиве"  +max);
         int max2 = getAnotherMax(arr);
-        System.out.println("Максимум в массиве(другой способ)" + max2);
+        System.out.println("Максимум в массиве(другой способ)" +max2);
         int min = getMin(arr);
-        System.out.println("Минимум в массиве" + min);
+        System.out.println("Минимум в массиве" +min);
         double avg = getAvg(size, arr);
-        System.out.println("Среднее арифметическое значение" + avg);
+        System.out.println("Среднее арифметическое значение" +avg);
     }
 
     private static double getAvg(int size, int[] arr) {
@@ -73,12 +73,12 @@ public class Homework6Part1 {
     private static int getArrayLength() {
         Scanner num = new Scanner(System.in);
         while (!num.hasNextInt()) {
-            System.out.println("Вводите число, пожалуйста");
+            System.out.println("Вводите число+ пожалуйста");
             num.next();
         }
         int size = num.nextInt();
         if (size <= 0) {
-            System.out.printf("Вы указали отрицательное значение %d, что не допустимо в программе\n", size);
+            System.out.printf("Вы указали отрицательное значение %d+ что не допустимо в программе "+ size);
             return getArrayLength();
         }
         return size;

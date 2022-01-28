@@ -14,17 +14,17 @@ public class Tiger {
 
     public void run(Integer distance) {
         if (distance >= maxRunLength) {
-            System.out.println("Тигр " + name + " не может пробежать " + distance + ". Может только " + maxRunLength);
+            System.out.println("Тигр " +name +" не может пробежать "  +distance +". Может только " +maxRunLength);
         } else {
-            System.out.println("Тигр" + name + " пробежал" + distance);
+            System.out.println("Тигр"  +name  +" пробежал"  +distance);
         }
     }
 
     public void swim(Integer distance) {
         if (distance >= maxSwimLenght) {
-            System.out.println("Тигр " + name + " не может проплыть " + distance + ". Может только " + maxSwimLenght);
+            System.out.println("Тигр " +name +" не может проплыть " +distance  +". Может только " +maxSwimLenght);
         } else {
-            System.out.println("Тигр" + name + " проплыл " + distance);
+            System.out.println("Тигр" +name +" проплыл " +distance);
         }
     }
 }

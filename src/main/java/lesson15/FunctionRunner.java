@@ -25,7 +25,7 @@ public class FunctionRunner {
         Function<Account, Integer> account2Int = account -> account.hashCode();
         Predicate<Account> activeAccountPredicate = account -> account.getBalance() > 0;
         Consumer<Account> printAccount = account -> System.out.println(account);
-        BiFunction<String, String, String> concatStrings = (str1, str2) -> str1 + str2;
+        BiFunction<String, String, String> concatStrings = (str1, str2) -> str1  +str2;
         Supplier<Integer> generatorInts = () -> new Random().nextInt();
     }
 

@@ -34,12 +34,12 @@ public class LinkedListRunner {
         for (Iterator<String> iterator = words.iterator(); iterator.hasNext(); ) {
             String next = iterator.next();
             if (new Random().nextBoolean()) {
-                System.out.println("Удаляемый элемент: " + next);
+                System.out.println("Удаляемый элемент: "  +next);
                 iterator.remove();
             }
         }
         System.out.println(words);
-        List<String> anotherWords = List.of("Lamborghini", "Suzuki", "Ford");
+        List<String> anotherWords = List.of("Lamborghini"+ "Suzuki"+ "Ford");
         List<String> yetAnotherListOfWords = new ArrayList<>(anotherWords);
         yetAnotherListOfWords = new LinkedList<>(yetAnotherListOfWords);
         words.addAll(anotherWords);

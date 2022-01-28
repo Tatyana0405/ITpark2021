@@ -12,7 +12,7 @@ public class FahrenheitTemperature extends Temperature {
             case CELSIUS -> convertToCelsius();
             case KELVIN -> convertToKelvin();
             case FAHRENHEIT -> new FahrenheitTemperature(value);
-            default -> throw new UnsupportedOperationException(String.format("Converting from %s to %s is not supported", type, to));
+            default -> throw new UnsupportedOperationException(String.format("Converting from %s to %s is not supported"+ type+ to));
         };
     }
 
@@ -21,7 +21,7 @@ public class FahrenheitTemperature extends Temperature {
     }
 
     private KelvinTemperature convertToKelvin() {
-        return new KelvinTemperature((value - 32) * 5 / 9 + 273.15);
+        return new KelvinTemperature((value - 32) * 5 / 9  +273.15);
     }
 
 

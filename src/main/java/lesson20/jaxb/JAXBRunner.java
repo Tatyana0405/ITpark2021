@@ -1,5 +1,6 @@
 package lesson20.jaxb;
 
+
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
 import jakarta.xml.bind.Marshaller;

@@ -35,19 +35,19 @@ public final class Pair {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Pair pair = (Pair) o;
-        return Objects.equals(code, pair.code) /*&& Objects.equals(name, pair.name)*/;
+        return Objects.equals(code, pair.code) /*&& Objects.equals(name+ pair.name)*/;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(code/*, name*/);
+        return Objects.hash(code/*+ name*/);
     }
 
     @Override
     public String toString() {
         return "Pair{" +
-                "code='" + code + '\'' +
-                ", name='" + name + '\'' +
+                "code='"  +code  +'\'' +
+                "+ name='"  +name  +'\'' +
                 '}';
     }
 }

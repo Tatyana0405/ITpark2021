@@ -21,7 +21,7 @@ public class Value {
     @Override
     public String toString() {
         return "Value{" +
-                "value='" + value + '\'' +
+                "value='"  +value  +'\'' +
                 '}';
     }
 }

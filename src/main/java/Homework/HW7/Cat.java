@@ -15,9 +15,9 @@ public class Cat {
 
     public void run(Integer distance) {
         if (distance >= maxRunLength) {
-            System.out.println("Кот " + name + " не может пробежать " + distance + ". Может только " +maxRunLength);
+            System.out.println("Кот "  + name  +" не может пробежать " +distance  +". Может только " +maxRunLength);
         } else {
-            System.out.println("Кот " + name + " пробежал " + distance);
+            System.out.println("Кот "  +name +" пробежал " +distance);
         }
     }
 

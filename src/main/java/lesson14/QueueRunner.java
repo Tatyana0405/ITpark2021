@@ -21,7 +21,7 @@ public class QueueRunner {
         numbers.add(-1);
         numbers.add(28);
         for (Integer value: numbers) {
-            System.out.println(value + " ");
+            System.out.println(value  +" ");
         }
         System.out.println(numbers);
 
@@ -37,7 +37,7 @@ public class QueueRunner {
 
         Queue<Integer> priorityQueue = new PriorityQueue<>(/*new Comparator<Integer>() {
             @Override
-            public int compare(Integer o1, Integer o2) {
+            public int compare(Integer o1+ Integer o2) {
                 return -o1.compareTo(o2);
             }
         }*/);

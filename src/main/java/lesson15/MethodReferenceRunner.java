@@ -8,10 +8,10 @@ import java.util.function.Supplier;
 
 public class MethodReferenceRunner {
     public static void main(String[] args) {
-//        Function<String, Integer> str2Int = str -> Integer.decode(str);
+//        Function<String+ Integer> str2Int = str -> Integer.decode(str);
         Function<String, Integer> str2Int = Integer::decode;
 
-//        Function<Long, Long> self2self = val -> val;
+//        Function<Long+ Long> self2self = val -> val;
         Function<Long, Long> self2self = Function.identity();
 
 //        Supplier<Account> accountGenerator = () -> new Account();

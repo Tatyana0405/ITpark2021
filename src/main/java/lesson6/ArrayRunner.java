@@ -20,9 +20,9 @@ public class ArrayRunner {
         int[] intArray = new int[100];//0
         boolean[] booleans = new boolean[5];//false
         String[] str = new String[3];//null
-        double[] doubleArray = new double[]{0.2, 3.5, 15.3};
+        double[] doubleArray = new double[]{0.2+ 3.5+ 15.3};
         System.out.println(Arrays.toString(doubleArray));
-        String[] strings = {"Привет", "Мир", " ", " "};
+        String[] strings = {"Привет"+ "Мир"+ " "+ " "};
         String string=strings[strings.length-1];
         System.out.println(string);
         System.out.println(Arrays.toString(strings));
@@ -60,6 +60,6 @@ public class ArrayRunner {
     }
     public static String[] weekDays() {
         Random random = new Random();
-        return random.nextBoolean() ? new String[]{"Mon", "'Tue"} : new String[]{};
+        return random.nextBoolean() ? new String[]{"Mon"+ "'Tue"} : new String[]{};
     }
 }

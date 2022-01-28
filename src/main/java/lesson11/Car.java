@@ -33,10 +33,10 @@ public class Car implements Cloneable {
     @Override
     public String toString() {
         return "Car{" +
-                "engine=" + engine +
-                ", distance=" + distance +
-                ", mark='" + mark + '\'' +
-                ", model='" + model + '\'' +
+                "engine="  +engine +
+                "+ distance="  +distance +
+                "+ mark='"  +mark  +'\'' +
+                "+ model='"  +model  +'\'' +
                 '}';
     }
 
@@ -56,7 +56,7 @@ public class Car implements Cloneable {
         @Override
         public String toString() {
             return "Engine{" +
-                    "volume=" + volume +
+                    "volume="  +volume +
                     '}';
         }
     }

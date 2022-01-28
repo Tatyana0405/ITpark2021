@@ -10,7 +10,7 @@ public class Printer extends AbstractPrinter implements PrintableAndCheckable {
 
     @Override
     public void print() {
-        System.out.println("Печать из класса " + this.getClass().getName() + " в " + getSource());
+        System.out.println("Печать из класса "  +this.getClass().getName()  +" в "  +getSource());
         //TODO:4465
     }
 

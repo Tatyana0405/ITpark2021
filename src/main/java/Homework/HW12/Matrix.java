@@ -1,8 +1,5 @@
 package Homework.HW12;
 
-import Homework.HW12.MyArraySizeException;
-import Homework.HW12.MyArrayDataException;
-
 import java.util.Random;
 
 public class Matrix {
@@ -28,10 +25,10 @@ public class Matrix {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
                 StringBuilder builder = new StringBuilder();
-                char code = (char) (r.nextInt(50) + 33);
+                char code = (char) (r.nextInt(50)  +33);
                 builder.append(Character.toString(code));
                 array[i][j] = builder.toString();
-                System.out.print(array[i][j] + " ");
+                System.out.print(array[i][j]  +" ");
             }
             System.out.println();
         }
@@ -44,7 +41,7 @@ public class Matrix {
                 try {
                     result.array1[i][j] = Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
-                    throw new MyArrayDataException("Неверный тип данных " + array[i][j]);
+                    throw new MyArrayDataException("Неверный тип данных "  +array[i][j]);
                 }
             }
         }

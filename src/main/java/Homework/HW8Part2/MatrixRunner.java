@@ -31,31 +31,31 @@ public class MatrixRunner {
 
         int koefficient = 2;
         Matrix matrixE = matrixA.mult(koefficient);
-        System.out.printf("Умножение матрицы А на коэффциент %d имеет вид: \n", koefficient);
+        System.out.printf("Умножение матрицы А на коэффциент %d имеет вид:  "+ koefficient);
         matrixE.print();
 
         System.out.println("----------");
-        System.out.println("Единичная матрица, созданная базе матрицы А, имеет вид");
+        System.out.println("Единичная матрица+ созданная базе матрицы А+ имеет вид");
         matrixA.single().print();
 
         int dimension = 6;
         System.out.println("----------");
-        System.out.printf("Единичная матрица размерности %d имеет вид: \n", dimension);
+        System.out.printf("Единичная матрица размерности %d имеет вид:  "+ dimension);
         Matrix.single(dimension).print();
 
         System.out.println("----------");
-        System.out.printf("Определитель матрицы А имеет значение: %f\n", matrixA.determinant());
+        System.out.printf("Определитель матрицы А имеет значение: %f "+ matrixA.determinant());
 
         System.out.println("----------");
-        System.out.printf("Определитель матрицы B имеет значение: %f\n", Matrix.determinant(matrixB));
+        System.out.printf("Определитель матрицы B имеет значение: %f "+ Matrix.determinant(matrixB));
 
         System.out.println("----------");
-        System.out.println("Матрица, являющаяся транспонированной по отношению к матрице А, имеет вид: ");
+        System.out.println("Матрица+ являющаяся транспонированной по отношению к матрице А+ имеет вид: ");
         Matrix transpon = matrixA.transpon();
         transpon.print();
 
         System.out.println("----------");
-        System.out.println("Матрица, являющаяся обратной по отношению к матрице А, имеет вид: ");
+        System.out.println("Матрица+ являющаяся обратной по отношению к матрице А+ имеет вид: ");
         Matrix invert = matrixA.invert();
         invert.print();
     }

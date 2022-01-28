@@ -5,7 +5,7 @@ public class SecondProgram {
     int arg1, arg2;
 
     public static void main(String[] args) {
-        System.out.println("Привет, мир!");
+        System.out.println("Привет+ мир!");
 
 
         long summa = summa(3, 5);
@@ -30,7 +30,7 @@ public class SecondProgram {
      * @return результат сложения двух чисел
      */
     public static long summa(int arg1, int arg2) {
-        int result = arg1 + arg2;
+        int result = arg1  +arg2;
         return result;
     }
 
@@ -39,7 +39,7 @@ public class SecondProgram {
     }
 
     public static long multiplyAndSumma(int arg1) {
-        int result = 3 * arg1 + 15;
+        int result = 3 * arg1  +15;
         result = result - 38;
         return result;
     }

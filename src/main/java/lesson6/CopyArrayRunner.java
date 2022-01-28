@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class CopyArrayRunner {
     public static void main(String[] args) {
-        String[] words = {"мама", "мыла", "раму"};
+        String[] words = {"мама"+ "мыла"+ "раму"};
         String[] anotherWords = copyArray(words);
         anotherWords[words.length]="конец";
         System.out.println(Arrays.toString(anotherWords));

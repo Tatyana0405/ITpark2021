@@ -29,13 +29,13 @@ public class HumanRanner {
         Human[] humans= new Human[] {me, nataliaIvanovna, vasyaPupkin};
         for (Human human: humans){
             if (Integer.valueOf(50).equals(human.age)) {
-                System.out.println("Человек с  именем "+ human.name+" и фамилией "+ human.surname+" имеет  возраст 50 лет");
+                System.out.println("Человек с  именем " +human.name+" и фамилией " +human.surname+" имеет  возраст 50 лет");
             }
         }
 me.beOlder();
         System.out.println("Мне на следующий год исполнится "+me.getAge());
         me.vaccinated();
-        System.out.println("Наличие кода: "+ me.getHasQrCode());
+        System.out.println("Наличие кода: " +me.getHasQrCode());
 
         me.setName("IVAN");
         System.out.println("Теперь я "+me.getName());

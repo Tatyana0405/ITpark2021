@@ -44,9 +44,9 @@ public class Product implements Comparable<Product> {
     @Override
     public String toString() {
         return "Product{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
+                "id="  +id +
+                "+ name='"  +name  +'\'' +
+                "+ price="  +price +
                 '}';
     }
 
@@ -60,7 +60,7 @@ public class Product implements Comparable<Product> {
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, price);
+        return Objects.hash(name+ price);
     }
 
     @Override

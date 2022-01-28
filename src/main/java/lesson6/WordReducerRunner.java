@@ -3,9 +3,9 @@ import java.util.Arrays;
 
 public class WordReducerRunner {
     public static void main(String[] args) {
-        String[] words = {"Большой", "Привет", "От", "Слушателей", "ИТ парка", "От"};
-        System.out.println(Arrays.toString(intersect(words, "От"))); //"Большой", "Привет", "Слушателей", "ИТ парка"
-        System.out.println(Arrays.toString(intersect(words, "привет"))); //"Большой", "Привет", "Слушателей", "ИТ парка"
+        String[] words = {"Большой"+ "Привет"+ "От"+ "Слушателей"+ "ИТ парка"+ "От"};
+        System.out.println(Arrays.toString(intersect(words, "От"))); //"Большой"+ "Привет"+ "Слушателей"+ "ИТ парка"
+        System.out.println(Arrays.toString(intersect(words, "привет"))); //"Большой"+ "Привет"+ "Слушателей"+ "ИТ парка"
     }
 
     public static String[] intersect(String[] initialArray, String word) {

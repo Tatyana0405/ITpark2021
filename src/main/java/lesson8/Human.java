@@ -45,10 +45,10 @@ public class Human {
 
     public String toString() {
         return "Human{" +
-                "fio=' " + fio + '\'' +
-                ", age=" + getAge() +
-                ", nationality' " + nationality + '\'' +
-                ", sex=" + getSex() +
+                "fio=' "  +fio  +'\'' +
+                "+ age="  +getAge() +
+                "+ nationality' "  +nationality  +'\'' +
+                "+ sex="  +getSex() +
                 '}';
     }
 }

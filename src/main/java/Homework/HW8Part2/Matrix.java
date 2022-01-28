@@ -42,7 +42,7 @@ package Homework.HW8Part2;
         public void print() {
             for (int i = 0; i < array.length; i++) {
                 for (int j = 0; j < array[i].length; j++) {
-                    System.out.print(array[i][j] + " ");
+                    System.out.print(array[i][j]  +" ");
                 }
                 System.out.println();
             }
@@ -55,7 +55,7 @@ package Homework.HW8Part2;
             Matrix result = new Matrix(this.m, this.n);
             for (int i = 0; i < this.array.length; i++) {
                 for (int j = 0; j < this.array[i].length; j++) {
-                    result.array[i][j] = this.array[i][j] + matrix.array[i][j];
+                    result.array[i][j] = this.array[i][j]  +matrix.array[i][j];
                 }
             }
             return result;
@@ -88,7 +88,7 @@ package Homework.HW8Part2;
             if (this.m != this.n) {
                 return new Matrix().single();
             }
-            Matrix result = new Matrix(this.m, this.n);
+            Matrix result = new Matrix(this.m,this.n);
             for (int i = 0; i < this.array.length; i++) {
                 for (int j = 0; j < this.array[i].length; j++) {
                     result.array[i][j] = i == j ? 1 : 0;

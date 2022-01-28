@@ -8,7 +8,7 @@ public class AnonymousRunner {
     public static void main(String[] args) {
         final String value = "Тестовая строка";
         Comparable<String> comparator = (String name) -> {
-            System.out.println("На вход получили значение " + name);
+            System.out.println("На вход получили значение "  +name);
             return value.compareTo(name);
         };
         int anotherStringAsResult = comparator.compareTo("Другая тестовая строка");

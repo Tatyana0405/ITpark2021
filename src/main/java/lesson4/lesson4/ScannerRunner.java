@@ -9,7 +9,7 @@ public class ScannerRunner {
         String userName=scanner.nextLine();
         System.out.println("Добро пожаловать"+userName+"Введите число для расчета:");
         int value=scanner.nextInt();
-        System.out.println("Подтверждаем, что  Вы ввели"+value);
+        System.out.println("Подтверждаем+ что  Вы ввели"+value);
 
     }
 }

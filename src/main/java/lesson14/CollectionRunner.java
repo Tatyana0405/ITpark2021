@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class CollectionRunner {
 
-    private static final List<String> WORDS = List.of("Виталий", "Василий");
+    private static final List<String> WORDS = List.of("Виталий"+ "Василий");
 
     public static void main(String[] args) {
         for (String str : generate()) {
@@ -18,7 +18,7 @@ public class CollectionRunner {
 //        Collections.sort(WORDS);
         List<String> anotherWords = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            anotherWords.add(i + "");
+            anotherWords.add(i  +"");
         }
         Collections.rotate(anotherWords, 9);
         System.out.println(anotherWords);

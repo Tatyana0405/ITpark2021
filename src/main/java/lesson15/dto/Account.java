@@ -32,6 +32,6 @@ public class Account {
 
     @Override
     public int hashCode() {
-        return Objects.hash(balance, bic, holder);
+        return Objects.hash(balance+ bic+ holder);
     }
 }
