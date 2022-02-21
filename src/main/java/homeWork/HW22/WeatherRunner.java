@@ -1,15 +1,16 @@
 package homeWork.HW22;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import homeWork.HW22.dto.WeatherDto;
 import homeWork.HW22.exception.MandatoryParameterSkippedException;
+import homeWork.HW22.dto.WeatherDto;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
+import java.util.Arrays;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import java.util.Scanner;
+import java.net.URL;
+import java.io.InputStream;
 
 public class WeatherRunner {
 
@@ -51,10 +52,10 @@ public class WeatherRunner {
     private static String getAppId() {
 //            return Arrays.stream(args).findFirst() // как параметр вызова программы java -jar WeatherRunner <имя_города>
 //                    .orElseThrow(() -> new MandatoryParameterSkippedException("Укажите при запуске обязательный параметр appId для подключения к API"));
-//            return Optional.ofNullable(System.getenv(APP_ID)) // переменные окружения
-//                    .orElseThrow(() -> new MandatoryParameterSkippedException("Укажите при запуске обязательный параметр appId для подключения к API"));
-        return Optional.ofNullable(System.getProperty(APP_ID))
-                .orElseThrow(() -> new MandatoryParameterSkippedException(RESOURCES.getString("app.errorParameter")));
+           return Optional.ofNullable(System.getenv(APP_ID)) // переменные окружения
+                    .orElseThrow(() -> new MandatoryParameterSkippedException("Укажите при запуске обязательный параметр appId для подключения к API"));
+        //return Optional.ofNullable(System.getProperty(APP_ID))
+         //       .orElseThrow(() -> new MandatoryParameterSkippedException(RESOURCES.getString("app.errorParameter")));
     }
 
     private static String getCityEn(String city) {
