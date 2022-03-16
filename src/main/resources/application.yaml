@@ -56,9 +56,9 @@ application:
       - Финальный текст
 
 
-#  main:
-#    banner-mode: 'off'
+    #main:
+    #banner-mode: 'off'
 
-#app:
-#  foodService:
-#    enabled: 1
+  #app:
+  #foodService:
+  # enabled: 1

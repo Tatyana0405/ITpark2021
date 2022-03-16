@@ -2,7 +2,7 @@ package lesson28;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lesson28.service.FoodService;
-import lesson28.service.PrintService;
+import lesson28.service.impl.PrintService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -11,11 +11,12 @@ import org.springframework.context.annotation.Bean;
 @SpringBootApplication
 public class SpringBootRunner {
     public static void main(String[] args) {
-        final ConfigurableApplicationContext appContext = SpringApplication.run(SpringBootRunner.class, args);
-        final FoodService foodService = appContext.getBean(FoodService.class);
+        final ConfigurableApplicationContext applicationContext = SpringApplication.run(SpringBootRunner.class, args);
+        final FoodService foodService = applicationContext.getBean(FoodService.class);
         foodService.feed();
+        final PrintService printService=applicationContext.getBean(PrintService.class);
 
-        final PrintService printService = appContext.getBean(PrintService.class);
+
     }
 
     @Bean

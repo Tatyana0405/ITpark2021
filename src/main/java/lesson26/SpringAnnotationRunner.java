@@ -1,6 +1,5 @@
 package lesson26;
 
-import lesson26.impl.CalculatorImpl;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class SpringAnnotationRunner {

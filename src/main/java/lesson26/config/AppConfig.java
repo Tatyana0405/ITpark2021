@@ -1,11 +1,11 @@
 package lesson26.config;
 
-import lesson25.spring.dao.PersonDao;
-import lesson25.spring.dao.impl.PersonDaoImpl;
 import lesson26.AccountService;
-import lesson26.PersonService;
 import lesson26.impl.AccountServiceImpl;
 import lesson26.impl.PersonServiceImpl;
+import lesson25.spring.dao.PersonDao;
+import lesson25.spring.dao.impl.PersonDaoImpl;
+import lesson26.PersonService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

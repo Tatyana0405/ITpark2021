@@ -4,7 +4,6 @@ import lesson26.ArgumentA;
 import lesson26.ArgumentB;
 import lesson26.Calculator;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component//("superPuperCalculator")
