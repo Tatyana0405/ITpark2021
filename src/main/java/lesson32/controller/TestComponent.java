@@ -1,4 +1,4 @@
-package lesson32.contoller;
+package lesson32.controller;
 
 import lesson32.event.PrintEvent;
 import lombok.extern.slf4j.Slf4j;
