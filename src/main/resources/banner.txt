@@ -1,1 +1,0 @@
-Стартануло приложение ${application.title} с версией ${application.version}
