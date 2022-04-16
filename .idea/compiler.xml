@@ -17,6 +17,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
         </processorPath>
         <module name="base (1)" />
+        <module name="reactive" />
+        <module name="nosql" />
         <module name="another" />
       </profile>
       <profile name="Annotation profile for common-dto" enabled="true">
@@ -39,6 +41,8 @@
       <module name="another" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="base (1)" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="base (2)" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="nosql" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="reactive" options="-parameters -Amapstruct.defaultComponentModel=spring" />
     </option>
   </component>
 </project>
