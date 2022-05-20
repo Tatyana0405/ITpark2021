@@ -19,3 +19,4 @@ public class GenreDto {
         return String.format("genre_%s", code);
     }
 }
+

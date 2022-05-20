@@ -1,9 +1,9 @@
 package lesson38.dto;
 
-        import lombok.AllArgsConstructor;
-        import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-        import java.util.List;
+import java.util.List;
 
 @Data
 @AllArgsConstructor

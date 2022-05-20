@@ -6,6 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="card-service" />
+        <module name="account-service" />
+        <module name="eureka" />
       </profile>
       <profile name="Annotation profile for itpark2021" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -16,10 +20,12 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
         </processorPath>
+        <module name="batch" />
+        <module name="spring-data-rest" />
         <module name="base (1)" />
         <module name="reactive" />
-        <module name="nosql" />
         <module name="another" />
+        <module name="nosql" />
       </profile>
       <profile name="Annotation profile for common-dto" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -30,6 +36,30 @@
         </processorPath>
         <module name="common-dto" />
       </profile>
+      <profile name="Annotation profile for client-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="client-service" />
+      </profile>
+      <profile name="Annotation profile for processing-service" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+        </processorPath>
+        <module name="processing-service" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base (2)" target="17" />
@@ -38,11 +68,19 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ITpark2021" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="account-service" options="-parameters" />
       <module name="another" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="api-gateway" options="-parameters" />
       <module name="base (1)" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="base (2)" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="batch" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="card-service" options="-parameters" />
+      <module name="client-service" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="eureka" options="-parameters" />
       <module name="nosql" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="processing-service" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="reactive" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="spring-data-rest" options="-parameters -Amapstruct.defaultComponentModel=spring" />
     </option>
   </component>
 </project>

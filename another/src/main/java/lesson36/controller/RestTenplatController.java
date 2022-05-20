@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequiredArgsConstructor
-public class RestTemplatController {
+public class RestTenplatController {
 
     private final RestTemplate restTemplate;
 
